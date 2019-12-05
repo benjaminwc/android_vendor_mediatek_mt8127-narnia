@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2007 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+
+<resources>
+	<!-- screen time out in 2 min; default is 60-sec -->
+    <integer name="def_screen_off_timeout">120000</integer>
+
+    <bool name="def_auto_time">true</bool>
+    <bool name="def_auto_time_zone">false</bool>
+
+    <!-- Default screen brightness, from 0 to 255.  102 is 40%; set to 85% -->
+    <integer name="def_screen_brightness">216</integer>
+
+	<!-- default auto-brightness is off -->
+    <!--bool name="def_screen_brightness_automatic_mode">false</bool-->
+
+    <!-- Turn off GPS as a default. 
+         Comma-separated list of location providers "gps,network"
+         Network location is off by default because it requires
+         user opt-in via Setup Wizard or Settings.
+    -->
+    <!--string name="def_location_providers_allowed" translatable="false"></string-->
+
+    <!-- Default for Settings.System.WIFI_SLEEP_POLICY: 2-always, 1-Only when plugged in, 0-Never -->
+    <!-- 0 == never keep wifi-on while sleep, 1 == only when plugged in, 2(default) == always keep wifi-on -->
+    <integer name="def_wifi_sleep_policy">2</integer>
+
+    <!-- Default for Settings.Secure.DEFAULT_INPUT_METHOD: platform LatinIME -->
+    <string name="def_input_method" translatable="false">com.android.inputmethod.latin/.LatinIME</string>
+	<!-- AOSP OpenWnnJAJP -->
+    <!--string name="def_input_method" translatable="false">jp.co.omronsoft.openwnn/.OpenWnnJAJP</string-->
+    <!-- Default for Settings.Secure.DEFAULT_INPUT_METHOD: GMS LatinIMEGoogle -->
+    <!--string name="def_input_method" translatable="false">com.google.android.inputmethod.latin/com.android.inputmethod.latin.LatinIME</string-->
+	<!--string name="def_input_method" translatable="false">com.google.android.inputmethod.pinyin/.PinyinIME</string-->
+	<!--string name="def_input_method" translatable="false">com.google.android.inputmethod.japanese/.MozcService</string-->
+	<!--string name="def_input_method" translatable="false">com.google.android.inputmethod.korean/.KoreanIme</string-->
+
+	<!-- +++ albert to overwrite tethering list in generic_WIFIONLY overlay so as to disable tethering altogether-->
+	<!-- +++ albert to disable tethering by setting Settings.Global.TETHER_SUPPORTED -->
+    <!-- [1:enable(default) | 0:disable]-->
+    <integer translatable="false" name="def_tether_supported">0</integer>
+
+	<!-- to enlarge default font size as defined in packages/apps/Settings/res/values/arrays.xml as
+		<string-array name="entryvalues_font_size" translatable="false">
+		    <item>0.9</item>  (Small)
+		    <item>1.0</item>  (Normal), default
+		    <item>1.1</item>  (Large)
+		    <item>1.15</item> (Extra Large)
+		</string-array>
+	-->
+    <string name="def_font_scale" translatable="false">1.1</string>
+	<!-- End of albert -->
+
+	<bool name="def_lockscreen_disabled">true</bool>
+
+    <integer name="def_lockscreen_sounds_enabled">0</integer>
+<!--
+    <string name="def_lock_sound" translatable="false">/system/media/audio/ui/Lock.ogg</string>
+    <string name="def_unlock_sound" translatable="false">/system/media/audio/ui/Unlock.ogg</string>
+-->
+
+	<!-- +++ albert to set comma, ',', separated package list to exampt from immersive mode confirmations. -->
+    <string name="def_immersive_mode_confirmations" translatable="false">*,com.quanta.welcometour,com.lvlstudio.leapfrog.kidlauncher</string>
+	<!-- End of albert -->
+
+</resources>

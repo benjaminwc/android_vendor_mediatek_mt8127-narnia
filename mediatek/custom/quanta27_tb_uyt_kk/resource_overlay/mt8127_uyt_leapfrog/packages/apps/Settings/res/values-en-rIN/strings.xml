@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2007 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <string name="crypt_keeper_failed_summary" product="tablet" msgid="4478225241476039013">"Encryption was interrupted and can\'t be completed. As a result, the data on your tablet is no longer accessible. \n\n To resume using your tablet, you need to perform a factory reset. When you set up your tablet after the reset, you\'ll have an opportunity to restore any data that was backed up to your LeapFrog Account."</string>
+
+    <string name="wifi_scan_always_available_summary" msgid="7768204638882691453">"Let location service and other apps scan for networks, even when Wi-Fi is off"</string>
+    <string name="wifi_scan_notify_text_location_on" msgid="8135076005488914200">"To improve location accuracy and for other purposes, apps may scan for nearby networks, even when Wi-Fi is off. If you don\'t want this to happen, go to Advanced &gt; Scanning always available."</string>
+
+    <string name="master_clear_desc" product="tablet" msgid="8317211882509025841">"This will erase all data from your tablet\'s "<b>"internal storage"</b>", including:\n\n"<li>"Your LeapFrog parent account information"</li>\n<li>"All child profiles"</li>\n<li>"System and app data and settings"</li>\n<li>"Downloaded apps"</li></string>
+
+    <!-- Master clear confirmation screen title [CHAR LIMIT=30] -->
+    <!--string name="master_clear_confirm_title" msgid="7572642091599403668">Are you sure you want to reset?</string-->
+
+    <string name="install_all_warning" product="tablet" msgid="3263360446508268880">Your tablet and personal data are more vulnerable to attack by apps, software and viruses
+ from unknown sources. You agree that you are solely responsible for any damage to your tablet or loss of data that may result from using these apps.
+\n\nUse the back button in the nav bar below to navigate to the previous page.</string>
+
+</resources>

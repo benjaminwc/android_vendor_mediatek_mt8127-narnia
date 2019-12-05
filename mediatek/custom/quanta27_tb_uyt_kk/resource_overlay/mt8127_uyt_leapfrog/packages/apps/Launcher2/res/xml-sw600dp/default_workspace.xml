@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2009 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+
+<favorites xmlns:launcher="http://schemas.android.com/apk/res/com.android.launcher">
+    <!-- Far-left screen [0] -->
+
+    <!-- +++ adam: launcher:lfIcon="@drawable/lf_launcher_app_browser" for lf customized icon -->
+
+    <!-- 3x2 -->
+
+    <!-- Child Settings launcher:lfIcon="@drawable/lf_child_controls" -->
+    <favorite
+        launcher:packageName="com.quanta.childsettings"
+        launcher:className="com.quanta.childsettings.ChildSettingsActivity"
+        launcher:screen="0"
+        launcher:x="0"
+        launcher:y="0" />
+
+    <!-- App Manager (Content Manager) launcher:lfIcon="@drawable/lf_app_manager" -->
+    <favorite
+        launcher:packageName="com.leapfrog.contentmanager"
+        launcher:className="com.leapfrog.contentmanager.MainActivity"
+        launcher:screen="0"
+        launcher:x="1"
+        launcher:y="0" />
+
+    <!-- Device (Parent Settings) launcher:lfIcon="@drawable/lf_device" -->
+    <favorite
+        launcher:packageName="com.quanta.parentsettings"
+        launcher:className="com.quanta.parentsettings.ParentSettingsActivity"
+        launcher:screen="0"
+        launcher:x="2"
+        launcher:y="0" />
+
+    <!-- Internet (Browser) launcher:lfIcon="@drawable/lf_internet" -->
+    <favorite
+        launcher:packageName="com.android.browser"
+        launcher:className="com.android.browser.BrowserActivity"
+        launcher:screen="0"
+        launcher:x="0"
+        launcher:y="1" />
+
+    <!-- App Center launcher:lfIcon="@drawable/lf_app_center" -->
+    <favorite
+        launcher:packageName="com.leapfrog.appcenter"
+        launcher:className="com.leapfrog.appcenter.AppCenterActivity"
+        launcher:screen="0"
+        launcher:x="1"
+        launcher:y="1" />
+
+    <!-- System Info launcher:lfIcon="@drawable/lf_system_info" -->
+    <favorite
+        launcher:packageName="com.quanta.systeminfo"
+        launcher:className="com.quanta.systeminfo.AboutTablet"
+        launcher:screen="0"
+        launcher:x="2"
+        launcher:y="1" />
+
+    <!-- LeapSearch launcher:lfIcon="@drawable/lf_leapsearch" -->
+	<!-- LeapSearch for Kids -->
+    <!--favorite
+        launcher:packageName="com.leapfrog.will.webkit"
+        launcher:className="com.leapfrog.leapsearch.MainActivity"
+        launcher:screen="0"
+        launcher:x="0"
+        launcher:y="2" /-->
+	<!-- LeapSearch for Parent -->
+    <favorite
+        launcher:packageName="com.leapfrog.leapsearch4parent"
+        launcher:className="com.leapfrog.leapsearch4parent.MainActivity"
+        launcher:screen="0"
+        launcher:x="0"
+        launcher:y="2" />
+
+	<!-- NAR-1880: Logout to Profile Picker -->	
+	<favorite
+        launcher:packageName="com.quanta.logout"
+        launcher:className="com.quanta.logout.LogoutActivity"
+        launcher:screen="0"
+        launcher:x="1"
+        launcher:y="2" />
+
+	<!-- NAR-2293: Leapfrog Support -->	
+	<favorite
+        launcher:packageName="com.quanta.leapfrog.support"
+        launcher:className="com.quanta.leapfrog.support.MainActivity"
+        launcher:screen="0"
+        launcher:x="2"
+        launcher:y="2" />
+
+</favorites>
